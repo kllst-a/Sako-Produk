@@ -12,7 +12,7 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var kategoris: [Kategori]
     @State private var selectedKategori: Kategori?
-    @State private var showTambahProdukSheet = false // Remove AppState connection
+    @State private var showTambahProdukSheet = false
 
     var body: some View {
         HStack(spacing: 0) {
@@ -46,7 +46,6 @@ struct ContentView: View {
                 selectedKategori = semuaProduk
             }
         }
-        // Remove the AppState onChange handler
     }
 }
 
