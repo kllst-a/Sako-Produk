@@ -61,7 +61,7 @@ struct ProdukView: View {
             Button(action: { showTambahProduk = true }) {
                 HStack(spacing: 4) {
                     Image(systemName: "plus")
-                    Text("Tambah")
+                    Text("Tambah Produk")
                 }
                 .foregroundColor(.blue)
             }
